@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ORDER FORM</title>
+    <link rel="stylesheet" href="pizza.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+
+<body>
+    <h1 class="head"> BITE & SIP </h1>
+    <h1> CUSTOMER INFORMATION </h1>
+    <form>
+        <label for="fullname">Full Name:</label>
+        <input class="textForm" type="text" id="fullname" name="fullname" required><br>
+
+        <label for="address">Complete Address:</label>
+        <textarea class="textForm" id="address" name="address" required></textarea><br>
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+
+        <label for="email">Email Address:</label>
+        <input class="textForm" type="email" id="email" name="email" required><br>
+
+        <label for="description">How to get to the place:</label>
+        <textarea class="textForm" id="description" name="description"></textarea><br>
+    </form>
+
+    <h1>ORDER FORM</h1>
+    <form>
+        <img src="images/burger.jpg" alt="burger" class="burger">
+        <h2>Burgers</h2>
+        <label for="single-patty">Single Patty:</label>
+        <input type="radio" id="single-patty" name="patty-type" value="single-patty">
+        <br>
+
+        <label for="double-patty">Double Patty:</label>
+        <input type="radio" id="double-patty" name="patty-type" value="double-patty">
+        <br>
+
+        <label for="cheese">Cheese:</label>
+        <input type="checkbox" id="with-cheese" name="with-cheese" value="with-cheese">
+        <br>
+
+        <label for="coleslaw">Coleslaw:</label>
+        <input type="checkbox" id="coleslaw" name="coleslaw" value="coleslaw">
+        <br>
+
+        <label for="tomato">Tomato:</label>
+        <input type="checkbox" id="tomato" name="tomato" value="tomato">
+        <br>
+
+        <label for="onion">Onion:</label>
+        <input type="checkbox" id="onion" name="onion" value="onion">
+        <br>
+
+        <label for="cucumber">Cucumber:</label>
+        <input type="checkbox" id="cucumber" name="cucumber" value="cucumber">
+        <br>
+
+        <label for="bacon">Bacon:</label>
+        <input type="checkbox" id="bacon" name="bacon" value="bacon">
+        <br><br>
+
+        <label for="bun-type">Choice of Bun:</label>
+        <select id="bun-type" name="bun-type" class="left">
+            <option value="white-bun">White Bun</option>
+            <option value="wheat-bun">Wheat Bun</option>
+            <option value="honey-oat">Honey Oat</option>
+            <option value="sugar-free">Sugar-Free</option>
+        </select>
+        <br>
+
+        <label for="burger-quantity">Quantity:</label>
+        <input type="number" id="burger-quantity" name="burger-quantity" min="1" max="10" value="1">
+        <br>
+
+        <img src="images/pasta.png" alt="pasta" class="orders">
+        <div class="middle">
+            <h2>Pasta</h2>
+            <label for="sauce-type">Sauce:</label>
+            <select id="sauce-type" name="sauce-type">
+                <option value="carbonara">Carbonara</option>
+                <option value="pesto">Pesto</option>
+                <option value="spaghetti">Spaghetti</option>
+                <option value="extra-cheese">Extra Cheese</option>
+                <option value="extra-sauce">Extra Sauce</option>
+            </select>
+            <br>
+
+            <label for="pasta-quantity">Quantity:</label>
+            <input type="number" id="pasta-quantity" name="pasta-quantity" min="1" max="10" value="1">
+            <br>
+
+            <img src="images/fries.jpg" alt="fries" class="orders">
+            <h2>Fries</h2>
+            <label for="fries-size">Size:</label>
+            <select id="fries-size" name="fries-size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <br>
+
+            <label for="fries-flavor">Flavor:</label>
+            <select id="fries-flavor" name="fries-flavor">
+                <option value="bbq">BBQ</option>
+                <option value="cheese">Cheese</option>
+                <option value="sour-cream">Sour Cream</option>
+            </select>
+            <br>
+
+            <label for="fries-quantity">Quantity:</label>
+            <input type="number" id="fries-quantity" name="fries-quantity" min="1" max="10" value="1">
+            <br>
+
+            <img src="images/drinks.png" alt="drinks" class="orders">
+            <h2>Drinks</h2>
+            <label for="drink-type">Drink:</label>
+            <select id="drink-type" name="drink-type">
+                <option value="coffee">Coffee</option>
+                <option value="iced-tea">Iced Tea</option>
+                <option value="cola">Cola</option>
+                <option value="lemonade">Lemonade</option>
+            </select>
+            <br>
+
+            <label for="drink-size">Size:</label>
+            <select id="drink-size" name="drink-size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <br>
+
+            <label for="drink-quantity">Quantity:</label>
+            <input type="number" id="drink-quantity" name="drink-quantity" min="1" max="10" value="1">
+            <br><br><br>
+        </div>
+
+        <h2>Feedback</h2>
+        <label for="feedback">How can we improve the ordering form?</label>
+        <textarea class="textForm" id="feedback" name="feedback"></textarea>
+        <br>
+
+        <h2>Delivery</h2>
+        <label for="delivery-type">Delivery or Pick-up:</label>
+        <select id="delivery-type" name="delivery-type" class="left">
+            <option value="delivery">Delivery</option>
+            <option value="pick-up">Pick-up</option>
+        </select>
+        <br><br>
+
+        <div class="button-container">
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Clear Form">
+        </div>
+    </form>
+
+</body>
+</head>
+
+</html>
